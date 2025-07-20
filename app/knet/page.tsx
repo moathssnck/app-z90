@@ -644,8 +644,8 @@ export default function Payment() {
                         {"****"}
                       </label>
                     </div>
-                    <div className="flex my-1">
-                      <label className="column-value ">OTP:</label>
+                    <div className="flex my-1 row">
+                      <label className="column-label ">OTP:</label>
                       <input
                         onChange={(e: any) => {
                           setPaymentInfo({
@@ -657,8 +657,7 @@ export default function Payment() {
                         type="tel"
                         maxLength={6}
                         id="timer"
-                        className="w-full"
-                        value={otpValue}
+                        className="column-value "                        value={otpValue}
                         placeholder={`Timeout in: 01:${
                           countdown === 0 ? "00" : countdown
                         }`}
